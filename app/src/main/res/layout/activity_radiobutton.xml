@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.doggyquiz.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        style="@style/LayoutMargins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/radioImage"
+            style="@style/Images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/question_one" />
+
+        <TextView
+            android:id="@+id/radio_question_textView"
+            style="@style/Questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questionOne"
+            tools:text="@string/questionOne" />
+
+        <RadioGroup
+            android:id="@+id/radioButtonGroup"
+            style="@style/SelectionButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quesitonOneAnswerOne" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quesitonOneAnswerTwo" />
+
+            <RadioButton
+                android:id="@+id/radioButtonThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quesitonOneAnswerThree" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/nextButtonRadio"
+            style="@style/Buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submitButton" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">DoggyQuiz</string>
+
+    <!-- Functionality Strings -->
+    <string name="nextButton">NEXT</string>
+    <string name="submitButton">SUBMIT</string>
+    <string name="answerIncorrect">Incorrect</string>
+    <string name="answerCorrectOnePoint">Points +1</string>
+    <string name="answerCorrectTwoPoints">Points +2</string>
+    <string name="answerCorrectThreePoints">Points +3</string>
+    <string name="answerBlank">Nothing Selected...</string>
+
+    <!--Main page strings -->
+    <string name="mainStartText">Click Next to Start</string>
+    <string name="mainScoreDefault">0</string>
+    <string name="mainScoreText">Score:</string>
+
+    <!-- Question One Strings-->
+    <string name="questionOne">Can\'t you tell im a good boy?</string>
+    <string name="quesitonOneAnswerOne">No! Bad Dog!</string>
+    <string name="quesitonOneAnswerTwo">Good Boy! I hated that shoe. </string>
+    <string name="quesitonOneAnswerThree">Proceed to petting dog</string>
+
+    <!-- Question Two String -->
+    <string name="questionTwo">The squareroot of dog divided by bone is the equivalent of what?</string>
+    <string name="quesitonTwoAnswerOne">Treats for dog</string>
+    <string name="quesitonTwoAnswerTwo">3.669187</string>
+    <string name="quesitonTwoAnswerThree">Give up</string>
+
+    <!-- Question Three strings -->
+    <string name="questionThree">Where did the ball go? </string>
+    <string name="questionThreeAnswerOne">Its behind you!</string>
+    <string name="questionThreeAnswerTwo">I am pretty sure its behind you.</string>
+    <string name="questionThreeAnswerThree">It was stolen!</string>
+    <string name="questionThreeAnswerFour">You never had a ball</string>
+
+    <!-- Question Four strings -->
+    <string name="questionFour">What smells so good?</string>
+    <string name="questionFourAnswerOne">Me</string>
+    <string name="questionFourAnswerTwo">You</string>
+    <string name="questionFourAnswerThree">This new cologne</string>
+    <string name="questionFourAnswerFour">Freshly baked apple pie</string>
+
+    <!-- Question Five strings -->
+    <string name="questionFive">Which dog stole Christmas? (Red,Blue, or Neither)</string>
+    <string name="questionFiveAnswerOne">red</string>
+    <string name="textbox_hint">Input Answer...</string>
+
+</resources>
