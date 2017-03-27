@@ -23,7 +23,7 @@
     </style>
     <style name="Images">
         <item name="android:layout_weight">2</item>
-        <item name ="android:scaleType">fitCenter</item>
+        <item name="android:scaleType">fitCenter</item>
     </style>
 
     <style name="Questions">

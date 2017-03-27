@@ -2,40 +2,40 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
+    style="@style/LayoutMargins"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/LayoutMargins"
     android:orientation="vertical"
     tools:context="com.example.android.doggyquiz.MainActivity">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/textboxImage"
         style="@style/Images"
-        android:src="@drawable/question_five"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/question_five"
+        tools:ignore="ContentDescription" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/textbox_question_textView"
         style="@style/Questions"
-        android:text="@string/questionFive"/>
-
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questionFive" />
 
     <EditText
+        android:id="@+id/editText"
+        style="@style/SelectionButtons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:lines="1"
-        style="@style/SelectionButtons"
-        android:id="@+id/editText"
-        android:hint="@string/textbox_hint"/>
+        android:hint="@string/textbox_hint"
+        android:lines="1" />
 
     <Button
+        android:id="@+id/nextButtonText"
+        style="@style/Buttons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/Buttons"
-        android:text="@string/nextButton"
-        android:id="@+id/nextButtonText" />
+        android:text="@string/nextButton" />
 
 </LinearLayout>

@@ -1,11 +1,8 @@
 package com.example.android.doggyquiz;
 
-import android.content.AsyncTaskLoader;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
@@ -56,48 +53,50 @@ public class RadioButtonActivity extends AppCompatActivity {
     @OnClick(R.id.nextButtonRadio)
     public void buttonClicked() {
 
-        if(isFirstQuestion){
+        if (isFirstQuestion) {
             // get selected id
             int selectedButton = mRadioGroup.getCheckedRadioButtonId();
             // checks answer question 1
-            switch(selectedButton){
+            switch (selectedButton) {
                 case R.id.radioButtonOne:
-                    Toast.makeText(this,R.string.answerIncorrect,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.answerIncorrect, Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.radioButtonTwo:
-                    Toast.makeText(this,R.string.answerCorrectOnePoint,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.answerCorrectOnePoint, Toast.LENGTH_SHORT).show();
                     pointCounter++;
                     break;
                 case R.id.radioButtonThree:
-                    Toast.makeText(this,R.string.answerCorrectOnePoint,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.answerCorrectOnePoint, Toast.LENGTH_SHORT).show();
                     pointCounter++;
                     break;
                 default:
-                    Toast.makeText(this,R.string.answerBlank,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.answerBlank, Toast.LENGTH_SHORT).show();
             }
 
+            // Setup question 2 and clear selection
             questionTwo();
+            mRadioGroup.clearCheck();
 
-        } else{
+        } else {
             // get selected Id
-             int selectedButton = mRadioGroup.getCheckedRadioButtonId();
+            int selectedButton = mRadioGroup.getCheckedRadioButtonId();
             // checks answer for question 2
-            switch(selectedButton){
+            switch (selectedButton) {
                 case R.id.radioButtonOne:
-                    Toast.makeText(this,R.string.answerCorrectOnePoint,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.answerCorrectOnePoint, Toast.LENGTH_SHORT).show();
                     pointCounter++;
                     break;
                 case R.id.radioButtonTwo:
-                    Toast.makeText(this,R.string.answerIncorrect,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.answerIncorrect, Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.radioButtonThree:
-                    Toast.makeText(this,R.string.answerIncorrect,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.answerIncorrect, Toast.LENGTH_SHORT).show();
                     break;
                 default:
-                    Toast.makeText(this,R.string.answerBlank,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.answerBlank, Toast.LENGTH_SHORT).show();
             }
             // Initiate next checkbox questions
-            Intent intent = new Intent(this,CheckboxActivity.class);
+            Intent intent = new Intent(this, CheckboxActivity.class);
             intent.putExtra("pointCounter", pointCounter);
             startActivity(intent);
         }
@@ -105,7 +104,7 @@ public class RadioButtonActivity extends AppCompatActivity {
     }
 
     // setup for question two
-    private void questionTwo(){
+    private void questionTwo() {
         isFirstQuestion = false;
         mQuestionTextView.setText(R.string.questionTwo);
         mButtonOne.setText(R.string.quesitonTwoAnswerOne);

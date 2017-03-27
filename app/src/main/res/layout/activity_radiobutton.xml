@@ -17,7 +17,8 @@
             style="@style/Images"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/question_one" />
+            android:src="@drawable/question_one"
+            tools:ignore="ContentDescription"/>
 
         <TextView
             android:id="@+id/radio_question_textView"

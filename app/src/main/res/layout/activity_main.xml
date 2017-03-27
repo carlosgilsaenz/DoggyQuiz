@@ -2,42 +2,41 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
+    style="@style/LayoutMargins"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/LayoutMargins"
     tools:context="com.example.android.doggyquiz.MainActivity">
 
     <TextView
+        android:id="@+id/mainScoreText"
+        style="@style/Questions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/mainScoreText"
-        android:id="@+id/mainScoreText"
-        style="@style/Questions"
-        />
+        android:text="@string/mainScoreText" />
+
     <TextView
+        android:id="@+id/mainScore"
+        style="@style/Score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/mainScoreText"
-        style="@style/Score"
-        android:id="@+id/mainScore"
-        android:text="@string/mainScoreDefault"/>
+        android:text="@string/mainScoreDefault" />
 
     <TextView
+        android:id="@+id/main_question_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/main_question_textView"
         android:layout_below="@+id/mainScore"
+        android:layout_centerHorizontal="true"
         android:text="@string/mainStartText" />
 
     <Button
+        android:id="@+id/nextButtonMain"
+        style="@style/Buttons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        style="@style/Buttons"
-        android:text="@string/nextButton"
-        android:id="@+id/nextButtonMain" />
-
+        android:text="@string/nextButton" />
 
 </RelativeLayout>

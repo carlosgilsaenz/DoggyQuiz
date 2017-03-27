@@ -8,6 +8,7 @@
     <string name="answerCorrectOnePoint">Points +1</string>
     <string name="answerCorrectTwoPoints">Points +2</string>
     <string name="answerCorrectThreePoints">Points +3</string>
+    <string name="answerCorrectFourPoints">Points +4</string>
     <string name="answerBlank">Nothing Selected...</string>
 
     <!--Main page strings -->
